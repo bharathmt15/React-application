@@ -7,7 +7,7 @@ function Toggle() {
 
             {toggler && <div className="box"></div>}
 
-            <div>
+            <div className="btns">
                 <button onClick={() => setToggler(false)}>Hide</button>
                 <button onClick={() => setToggler(true)}>Show</button>
             </div>

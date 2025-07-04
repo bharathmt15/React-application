@@ -81,7 +81,14 @@ body {
 .box {
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: green;
     color: white;
     margin: 0 auto;
+}
+
+.btns {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
