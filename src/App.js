@@ -1,10 +1,11 @@
 import "./App.css";
-import "./Components/Home";
 import Home from "./Components/Home";
+import Toggle from "./Components/Toggle";
 function App() {
     return (
         <>
             <Home />
+            <Toggle />
         </>
     );
 }
