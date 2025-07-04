@@ -2,3 +2,10 @@
     margin: 0px;
     padding: 0xp;
 }
+
+body {
+    background-color: black;
+}
+.App {
+    color: white;
+}
