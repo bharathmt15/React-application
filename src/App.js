@@ -1,11 +1,9 @@
 import "./App.css";
-import Home from "./Components/Home";
-import Toggle from "./Components/Toggle";
+import Arithmetic from "./Components/Arithmetic";
 function App() {
     return (
         <>
-            <Home />
-            <Toggle />
+            <Arithmetic />
         </>
     );
 }
