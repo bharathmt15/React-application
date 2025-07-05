@@ -29,7 +29,7 @@ body {
     align-items: center;
 }
 .log img {
-    animation: spin 6s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
