@@ -2,6 +2,9 @@ import logo from "../Images/logo192.png";
 import {useState} from "react";
 export default function Home() {
     const [Count, setCount] = useState(0);
+    if (Count < 0) {
+        setCount(Count === 0);
+    }
     return (
         <>
             <div className="container">
