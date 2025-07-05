@@ -1,9 +1,9 @@
 import "./App.css";
-import Arithmetic from "./Components/Arithmetic";
+import Home from "./Components/Home.js";
 function App() {
     return (
         <>
-            <Arithmetic />
+            <Home />
         </>
     );
 }
