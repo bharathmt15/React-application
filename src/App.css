@@ -30,6 +30,7 @@ body {
 }
 .log img {
     animation: spin 3s linear infinite;
+    cursor: pointer;
 }
 
 @keyframes spin {
