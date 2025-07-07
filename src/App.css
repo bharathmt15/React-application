@@ -5,7 +5,7 @@
 
 body {
     font-family: cursive;
-    background-color: rgb(35, 68, 55);
+    background-color: rgb(128, 73, 73);
 }
 .container {
     /* border: 2px solid black; */
@@ -57,7 +57,7 @@ body {
 }
 .inc button:hover {
     background-color: aliceblue;
-    color: purple;
+    color: rgb(56, 46, 56);
 }
 
 .Count {
