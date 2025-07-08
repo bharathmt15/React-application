@@ -52,10 +52,10 @@ export default function Fruits() {
     ];
     return (
         <>
-            <div className="text-center my-3 name">
+            <div className="text-center my-auto bg-white">
                 <h3>Fruits List Application</h3>
                 {fruits.map((fruit) => (
-                    <div key={fruit.slno} className="my-4">
+                    <div key={fruit.price} className="my-4 h4">
                         <img
                             src={fruit.fruitImage}
                             alt={fruit.fruit_name}
@@ -65,7 +65,6 @@ export default function Fruits() {
                         <p>
                             Price: ₹{fruit.price} per {fruit.unit}
                         </p>
-                        <p>Unit: {fruit.unit}</p>
                     </div>
                 ))}
             </div>
