@@ -93,3 +93,13 @@ body {
     justify-content: center;
     gap: 20px;
 }
+.name {
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.name img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}

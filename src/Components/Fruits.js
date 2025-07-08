@@ -52,7 +52,7 @@ export default function Fruits() {
     ];
     return (
         <>
-            <div className="text-center my-3">
+            <div className="text-center my-3 name">
                 <h3>Fruits List Application</h3>
                 {fruits.map((fruit) => (
                     <div key={fruit.slno} className="my-4">
