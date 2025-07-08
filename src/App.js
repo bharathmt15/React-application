@@ -1,9 +1,10 @@
 import "./App.css";
-import Home from "./Components/Home.js";
+// import Home from "./Components/Home.js";
+import Fruits from "./Components/Fruits";
 function App() {
     return (
         <>
-            <Home />
+            <Fruits />
         </>
     );
 }
