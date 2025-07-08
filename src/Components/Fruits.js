@@ -11,7 +11,7 @@ export default function Fruits() {
             slno: 101,
             fruit_name: "Apple",
             fruitImage: apple,
-            unit: "KG",
+            unit: "per/Kg",
             price: 120,
         },
         {
@@ -25,14 +25,14 @@ export default function Fruits() {
             slno: 103,
             fruit_name: "Mango",
             fruitImage: mango,
-            unit: "KG",
+            unit: "per/Kg",
             price: 100,
         },
         {
             slno: 104,
             fruit_name: "Orange",
             fruitImage: orange,
-            unit: "KG",
+            unit: "per/Kg",
             price: 80,
         },
         {
@@ -46,7 +46,7 @@ export default function Fruits() {
             slno: 106,
             fruit_name: "Grapes",
             fruitImage: grapes,
-            unit: "KG",
+            unit: "per/Kg",
             price: 70,
         },
     ];
@@ -55,16 +55,17 @@ export default function Fruits() {
             <div className="text-center my-3">
                 <h3>Fruits List Application</h3>
                 {fruits.map((fruit) => (
-                    <div key={fruit.slno} className="my-3">
+                    <div key={fruit.slno} className="my-4">
+                        <img
+                            src={fruit.fruitImage}
+                            alt={fruit.fruit_name}
+                            width="250px"
+                        />
                         <h4>{fruit.fruit_name}</h4>
                         <p>
                             Price: ₹{fruit.price} per {fruit.unit}
                         </p>
-                        <img
-                            src={fruit.fruitImage}
-                            alt={fruit.fruit_name}
-                            width="200px"
-                        />
+                        <p>Unit: {fruit.unit}</p>
                     </div>
                 ))}
             </div>
