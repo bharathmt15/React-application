@@ -38,7 +38,7 @@ export default function Arithmetic() {
                         <input
                             type="tel"
                             disabled
-                            className="form-control bg-light"
+                            className="form-control bg-light.bg-gradient text-dark"
                             value={res}
                         />
                     </div>
