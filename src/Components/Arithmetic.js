@@ -3,6 +3,13 @@ export default function Arithmetic() {
     const [Num1, setNum1] = useState(" ");
     const [Num2, setNum2] = useState("");
     const [res, setRes] = useState("");
+    const Division = () => {
+        if (Number(Num2) === 0) {
+            setRes(`not possible to divide`);
+        } else {
+            setRes(Number(Num1) / Number(Num2));
+        }
+    };
     return (
         <>
             <div className="my-3">
@@ -55,10 +62,7 @@ export default function Arithmetic() {
                     >
                         Multiply
                     </button>
-                    <button
-                        className="btn btn-primary me-2"
-                        onClick={() => setRes(Num1 / Num2)}
-                    >
+                    <button className="btn btn-primary me-2" onClick={Division}>
                         Division
                     </button>
                 </div>
