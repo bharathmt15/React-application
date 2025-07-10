@@ -97,3 +97,11 @@ body {
 .name {
     font-family: cursive;
 }
+
+.units {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
