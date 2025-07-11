@@ -87,8 +87,14 @@ export default function Employee() {
     const [empslist, setEmplist] = useState([...emps]);
 
     const del = (empNo) => {
-        const list = empslist.filter((emp) => emp.empNo !== empNo);
-        setEmplist(list);
+        let conf = window.prompt(`delete the record ?`);
+        if (conf === "yes") {
+            const list = empslist.filter((emp) => emp.empNo !== empNo);
+            setEmplist(list);
+            console.log(`deleted record`);
+        } else {
+            console.log(`no record is deleted`);
+        }
     };
     return (
         <>
