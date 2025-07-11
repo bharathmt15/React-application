@@ -1,4 +1,9 @@
 import React, {useState} from "react";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import Button from "@mui/material/Button";
 
 export default function Employee() {
     const emps = [
@@ -85,16 +90,22 @@ export default function Employee() {
     ];
 
     const [empslist, setEmplist] = useState([...emps]);
+    const [DialogOpenFlag, setDialogOpenFlag] = useState(false);
+    const [delteingEmpno, setDeleteingEmpno] = useState("");
 
     const del = (empNo) => {
-        let conf = window.prompt(`delete the record ?`);
-        if (conf === "yes") {
-            const list = empslist.filter((emp) => emp.empNo !== empNo);
-            setEmplist(list);
-            console.log(`deleted record`);
-        } else {
-            console.log(`no record is deleted`);
-        }
+        // const list = empslist.filter((emp) => emp.empNo !== empNo);
+        // setEmplist(list);
+        setDialogOpenFlag(true);
+        setDeleteingEmpno(empNo);
+    };
+    const yes = () => {
+        setDialogOpenFlag(false);
+        const list = empslist.filter((emp) => emp.empNo !== delteingEmpno);
+        setEmplist(list);
+    };
+    const no = () => {
+        setDialogOpenFlag(false);
     };
     return (
         <>
@@ -136,6 +147,20 @@ export default function Employee() {
                         ))}
                     </tbody>
                 </table>
+                <Dialog open={DialogOpenFlag}>
+                    <DialogTitle>Delete Caution</DialogTitle>
+                    <DialogContent>
+                        Do you want to delete this employee ?
+                    </DialogContent>
+                    <DialogActions>
+                        <Button className="btn btn-danger" onClick={yes}>
+                            Delete
+                        </Button>
+                        <Button className="btn btn-primary" onClick={no}>
+                            Cancel
+                        </Button>
+                    </DialogActions>
+                </Dialog>
             </div>
         </>
     );
