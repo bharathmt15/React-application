@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Employee() {
-    const emplist = [
+    const emps = [
         {
             empNo: 101,
             empName: "Bharath",
@@ -83,11 +83,18 @@ export default function Employee() {
             emailId: "rockystar2025x@gmail.com",
         },
     ];
+
+    const [empslist, setEmplist] = useState([...emps]);
+
+    const del = (empNo) => {
+        const list = empslist.filter((emp) => emp.empNo !== empNo);
+        setEmplist(list);
+    };
     return (
         <>
             <div className="text-center my-0">
                 <h3>Employees List App</h3>
-                <table className="table table-striped table-hvoer">
+                <table className="table table-striped table-hover">
                     <thead className="table-dark">
                         <tr>
                             <th>Employee No.</th>
@@ -95,31 +102,32 @@ export default function Employee() {
                             <th>Job</th>
                             <th>Salary</th>
                             <th>Mobile</th>
-                            <th>email ID</th>
+                            <th>Email ID</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {emplist.map((emp) => {
-                            return (
-                                <tr key={emp.empNo}>
-                                    <td>{emp.empNo}</td>
-                                    <td>{emp.empName}</td>
-                                    <td>{emp.job}</td>
-                                    <td>{emp.salary}</td>
-                                    <td>{emp.mobileNo}</td>
-                                    <td>{emp.emailId}</td>
-                                    <td>
-                                        <button className="btn btn-primary me-3">
-                                            Edit
-                                        </button>
-                                        <button className="btn btn-danger">
-                                            Delete
-                                        </button>
-                                    </td>
-                                </tr>
-                            );
-                        })}
+                        {empslist.map((emp) => (
+                            <tr key={emp.empNo}>
+                                <td>{emp.empNo}</td>
+                                <td>{emp.empName}</td>
+                                <td>{emp.job}</td>
+                                <td>{emp.salary}</td>
+                                <td>{emp.mobileNo}</td>
+                                <td>{emp.emailId}</td>
+                                <td>
+                                    <button className="btn btn-primary me-3">
+                                        Edit
+                                    </button>
+                                    <button
+                                        className="btn btn-danger"
+                                        onClick={() => del(emp.empNo)}
+                                    >
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </div>
