@@ -105,3 +105,9 @@ body {
     gap: 25px;
     align-items: center;
 }
+
+.content {
+    border: 2px solid yellow;
+    height: 100vh;
+    font-size: 24px;
+}
