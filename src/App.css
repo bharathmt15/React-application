@@ -122,3 +122,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.flex-container img {
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.flex-container img:hover {
+    transform: scale(1.15);
+}
