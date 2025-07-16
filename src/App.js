@@ -1,7 +1,7 @@
 import "./App.css";
+import Ecomstore from "./Components/Ecomstore";
 // import Counter from "./Components/Counter";
 // import Todolist from "./Components/Todolist";
-import UseEffect from "./Components/UseEffect";
 // import Home from "./Components/Home.js";
 // import Fruits from "./Components/Fruits";
 // import Employee from "./Components/Employee";
@@ -9,7 +9,7 @@ import UseEffect from "./Components/UseEffect";
 function App() {
     return (
         <>
-            <UseEffect />
+            <Ecomstore />
         </>
     );
 }
