@@ -1,18 +1,17 @@
 import {useEffect, useState} from "react";
-
-function E_Commerce_site() {
+import axios from "axios";
+function Ecomstore() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch("https://dummyjson.com/products")
-            .then((result) => result.json())
-
+        axios
+            .get("https://dummyjson.com/products")
             .then((data) => {
-                console.log("Data i sfetched successfully.");
-
-                console.log(data);
-
-                setProducts(data.products);
+                console.log("true fetched");
+                setProducts(data.data.products);
+            })
+            .catch((err) => {
+                console.error("Error fetching data:", err);
             });
     }, []);
 
@@ -55,4 +54,4 @@ function E_Commerce_site() {
     );
 }
 
-export default E_Commerce_site;
+export default Ecomstore;
