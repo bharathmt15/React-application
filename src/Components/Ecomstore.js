@@ -2,6 +2,9 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 function Ecomstore() {
     const [products, setProducts] = useState([]);
+    const reviews = () => {
+        console.log(`will be available soon`);
+    };
 
     useEffect(() => {
         axios
@@ -46,6 +49,17 @@ function Ecomstore() {
                             <p className="text-success fs-4">
                                 ${product.price}
                             </p>
+                            <div className="text-center">
+                                <button className="btn btn-primary me-2">
+                                    Buy now
+                                </button>
+                                <button
+                                    className="btn btn-success"
+                                    onClick={reviews}
+                                >
+                                    See Reviews
+                                </button>
+                            </div>
                         </div>
                     );
                 })}
