@@ -1,6 +1,9 @@
 import idly from "./Tiffins/Idly.jpg";
 import "./Style.css";
+import {useState} from "react";
+
 export default function Home() {
+    const [no, setNo] = useState(1);
     return (
         <>
             <div className="foods">
@@ -19,7 +22,23 @@ export default function Home() {
             </div>
             <div className="text-center">
                 <button className="btn btn-primary me-2">Order now</button>
-                <button className="btn btn-secondary ms-2">Add To Cart</button>
+                <button
+                    className="btn btn-danger ms-2"
+                    onClick={() => {
+                        setNo(no <= 1 ? 1 : no - 1);
+                    }}
+                >
+                    -
+                </button>
+                <button className="btn btn-secondary ms-2">{no}</button>
+                <button
+                    className="btn btn-success ms-2"
+                    onClick={() => {
+                        setNo(no + 1);
+                    }}
+                >
+                    +
+                </button>
             </div>
         </>
     );
