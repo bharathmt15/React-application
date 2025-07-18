@@ -10,7 +10,7 @@ export default function Propdrilling() {
 
     return (
         <div className="text-center mt-3">
-            <h2>Prop Drilling</h2>
+            <h2>Contex API</h2>
 
             <PropC1 count={Count} />
 
@@ -27,13 +27,13 @@ export default function Propdrilling() {
                 </button>
                 <button
                     onClick={() => setCount(0)}
-                    className="btn btn-primary me-3"
+                    className="btn btn-secondary me-3"
                 >
                     Reset
                 </button>
                 <button
                     onClick={() => setCount(Count - 1)}
-                    className="btn btn-primary me-3"
+                    className="btn btn-success me-3"
                 >
                     Decrease
                 </button>
