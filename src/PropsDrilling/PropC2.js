@@ -1,11 +1,11 @@
 import React from "react";
-import PropsC3 from "./PropC3";
+import PropC3 from "./PropC3";
 
-export default function PropC2() {
+export default function PropC2({count}) {
     return (
         <div>
             <h2>Prop Component 2</h2>
-            <PropsC3 />
+            <PropC3 count={count} />
         </div>
     );
 }
