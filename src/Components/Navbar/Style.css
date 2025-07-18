@@ -11,3 +11,14 @@
     transform: scale(1.05);
     opacity: 0.899;
 }
+
+.price {
+    /* border: 2px solid blue; */
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: cursive;
+}
