@@ -4,6 +4,7 @@ import {useState} from "react";
 
 export default function Home() {
     const [no, setNo] = useState(1);
+    const [Price] = useState("49/-");
     return (
         <>
             <div className="foods">
@@ -39,6 +40,7 @@ export default function Home() {
                 >
                     +
                 </button>
+                <p className="mt-2 price">Rs {Price}</p>
             </div>
         </>
     );
