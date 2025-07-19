@@ -129,4 +129,5 @@ body {
 
 .flex-container img:hover {
     transform: scale(1.15);
+    object-fit: cover;
 }
