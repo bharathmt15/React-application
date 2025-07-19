@@ -1,10 +1,9 @@
-import React from "react";
 // import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 // import Navbar from "./Components/Navbar/Navbar";
-import Propdrilling from "./PropsDrilling/Propdrilling";
+// import Propdrilling from "./PropsDrilling/Propdrilling";
 
 // previously used components
-// import Ecomstore from "./Components/Ecomstore";
+import Ecomstore from "./Components/Ecomstore";
 // import Counter from "./Components/Counter";
 // import Todolist from "./Components/Todolist";
 // import Home from "./Components/Home.js";
@@ -19,9 +18,11 @@ import Propdrilling from "./PropsDrilling/Propdrilling";
 // import Roti from "./Components/Navbar/Chappati";
 // import Puri from "./Components/Navbar/Puri";
 // import Allfood from "./Components/Navbar/Allfood";
+import "./App.css";
 
 function App() {
     return (
+        <Ecomstore />
         // <Router>
         //     <Navbar />
         //     <Routes>
@@ -34,7 +35,6 @@ function App() {
         //         <Route path="/All_tiff" element={<Allfood />} />
         //     </Routes>
         // </Router>
-        <Propdrilling />
     );
 }
 
