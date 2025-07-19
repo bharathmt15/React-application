@@ -1,18 +1,15 @@
 import {useEffect, useState} from "react";
-import axios from "axios";
 function Ecomstore() {
     const [products, setProducts] = useState([]);
-    const [productList] = useState();
 
     const search = () => {
-        alert(productList);
+        console.clear();
     };
     useEffect(() => {
-        axios
-            .get("https://dummyjson.com/products/")
+        fetch("https://dummyjson.com/products/")
+            .then((response) => response.json())
             .then((data) => {
-                console.log("true fetched");
-                setProducts(data.data.products);
+                setProducts(data.products);
             })
             .catch((err) => {
                 console.error("Error fetching data:", err);
