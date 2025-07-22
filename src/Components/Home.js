@@ -3,7 +3,7 @@ import {useState} from "react";
 export default function Home() {
     const [Count, setCount] = useState(0);
     if (Count < 0) {
-        setCount(Count === 0);
+        setCount(0);
     }
     return (
         <>
@@ -18,8 +18,8 @@ export default function Home() {
             </div>
             <div className="inc">
                 <button onClick={() => setCount(Count + 1)}>Increase</button>
+                <button onClick={() => setCount(0)}>reset</button>
                 <button onClick={() => setCount(Count - 1)}>Decrease</button>
-                <button onClick={() => setCount(Count === 0)}>reset</button>
             </div>
         </>
     );
