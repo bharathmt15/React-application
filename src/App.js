@@ -3,7 +3,7 @@
 // import Propdrilling from "./PropsDrilling/Propdrilling";
 
 // previously used components
-import Ecomstore from "./Components/Ecomstore";
+// import Ecomstore from "./Components/Ecomstore";
 // import Counter from "./Components/Counter";
 // import Todolist from "./Components/Todolist";
 // import Home from "./Components/Home.js";
@@ -18,6 +18,7 @@ import Ecomstore from "./Components/Ecomstore";
 // import Roti from "./Components/Navbar/Chappati";
 // import Puri from "./Components/Navbar/Puri";
 // import Allfood from "./Components/Navbar/Allfood";
+import ParentToChild from "./Components/ParentToChild";
 import "./App.css";
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         //         <Route path="/All_tiff" element={<Allfood />} />
         //     </Routes>
         // </Router>
-        <Ecomstore />
+        <ParentToChild />
     );
 }
 
