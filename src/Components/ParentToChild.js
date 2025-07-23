@@ -9,7 +9,7 @@ export default function ParentToChild() {
     return (
         <div className="text-center bg-dark text-white">
             <h3>Parent to Child Demo</h3>
-            <h3>Cureent count : {count}</h3>
+            <h3>Current count : {count}</h3>
             <div>
                 <button
                     className="btn btn-primary me-3"
