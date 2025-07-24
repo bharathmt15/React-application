@@ -20,7 +20,8 @@
 // import Allfood from "./Components/Navbar/Allfood";
 // import ParentToChild from "./Components/ParentToChild";
 import "./App.css";
-import ChildToParent from "./Components/ChildToParent";
+// import ChildToParent from "./Components/ChildToParent";
+import Colorpicker from "./Components/Colorpicker";
 
 function App() {
     return (
@@ -36,7 +37,7 @@ function App() {
         //         <Route path="/All_tiff" element={<Allfood />} />
         //     </Routes>
         // </Router>
-        <ChildToParent />
+        <Colorpicker />
     );
 }
 
