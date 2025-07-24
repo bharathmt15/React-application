@@ -45,7 +45,7 @@ export default function Vada() {
                 >
                     +
                 </button>
-                <p className="mt-2 price">Rs: {VadaPrice}/-</p>
+                <p className="mt-2 price">Rs: {VadaPrice}/Plate</p>
             </div>
         </>
     );

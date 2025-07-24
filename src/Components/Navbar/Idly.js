@@ -31,19 +31,19 @@ export default function Home() {
             <div className="text-center">
                 <button className="btn btn-primary me-2">Order now</button>
                 <button
-                    className="btn btn-danger ms-2"
+                    className="btn btn-danger me-2"
                     onClick={() => setNo(no <= 1 ? 1 : no - 1)}
                 >
                     -
                 </button>
-                <button className="btn btn-secondary ms-2">{no}</button>
+                <button className="btn btn-secondary me-2">{no}</button>
                 <button
-                    className="btn btn-success ms-2"
+                    className="btn btn-success me-2"
                     onClick={() => setNo(no + 1)}
                 >
                     +
                 </button>
-                <p className="mt-2 price">Rs: {totalPrice}/-</p>
+                <p className="mt-2 price">Rs: {totalPrice}/Plate</p>
             </div>
         </>
     );

@@ -44,7 +44,7 @@ export default function Puri() {
                 >
                     +
                 </button>
-                <p className="mt-2 price">Rs: {Puriprice}</p>
+                <p className="mt-2 price">Rs: {Puriprice}/Plate</p>
             </div>
         </>
     );

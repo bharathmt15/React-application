@@ -44,7 +44,7 @@ export default function More() {
                 >
                     +
                 </button>
-                <p className="price">Rs: {ChapathiPrice}/-</p>
+                <p className="price">Rs: {ChapathiPrice}/Plate</p>
             </div>
         </>
     );

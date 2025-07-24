@@ -32,19 +32,19 @@ export default function Dosa() {
             <div className="text-center">
                 <button className="btn btn-primary me-2">Order now</button>
                 <button
-                    className="btn btn-danger ms-2"
+                    className="btn btn-danger me-2"
                     onClick={() => setDquant(Dquant <= 1 ? 1 : Dquant - 1)}
                 >
                     -
                 </button>
-                <button className="btn btn-secondary ms-2">{Dquant}</button>
+                <button className="btn btn-secondary me-2">{Dquant}</button>
                 <button
-                    className="btn btn-success ms-2"
+                    className="btn btn-success me-2"
                     onClick={() => setDquant(Dquant + 1)}
                 >
                     +
                 </button>
-                <p className="mt-2 price">Rs: {DosaPrice}/-</p>
+                <p className="mt-2 price">Rs: {DosaPrice}/Plate</p>
             </div>
         </>
     );

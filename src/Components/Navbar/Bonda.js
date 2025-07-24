@@ -44,7 +44,7 @@ export default function Operations() {
                 >
                     +
                 </button>
-                <p className="price text-center">Rs: {BondaPrice}/-</p>
+                <p className="price text-center">Rs: {BondaPrice}/ Plate</p>
             </div>
         </>
     );

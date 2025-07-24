@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
-    font-family: cursive;
+    font-size: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
