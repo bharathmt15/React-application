@@ -28,6 +28,7 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
+                <Route path="/" element={<Allfood />} />
                 <Route path="/Idly" element={<Idly />} />
                 <Route path="/Dosa" element={<Dosa />} />
                 <Route path="/Bonda" element={<Bonda />} />
