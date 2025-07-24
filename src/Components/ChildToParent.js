@@ -10,7 +10,7 @@ export default function ChildToParent() {
             <div className="text-center bg-dark text-white">
                 <h3>Child to parent Props Demo</h3>
                 <div>
-                    <h3>Current count is {Pcount}</h3>
+                    <h3>Current count of Parent {Pcount}</h3>
                 </div>
                 <Parent getIncremenet={getIncremenet} />
             </div>
