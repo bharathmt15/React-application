@@ -53,7 +53,7 @@ function Ecomstore() {
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
                 >
-                    <option value="">Eg beauty</option>
+                    <option value="">Eg. beauty</option>
                     {categories.map((cat, index) => (
                         <option value={cat.slug} key={index}>
                             {cat.name}
