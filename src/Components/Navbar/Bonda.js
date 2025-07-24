@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import bonda from "./Tiffins/Bonda.jpg";
+
 export default function Operations() {
+    useEffect(() => {
+        return () => {
+            document.title = "One bite and she squirts flavor";
+        };
+    }, []);
     return (
         <>
             <div className="foods">

@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import roti from "./Tiffins/Roti.jpg";
 export default function More() {
+    useEffect(() => {
+        return () => {
+            document.title = "Spread her P wide — she loves the heat";
+        };
+    }, []);
     return (
         <>
             <div className="foods">

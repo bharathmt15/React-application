@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import vada from "./Tiffins/Vada.jpg";
 export default function Vada() {
+    useEffect(() => {
+        return () => {
+            document.title =
+                "She's got a hole, she's hot, and she's ready to get dipped";
+        };
+    }, []);
     return (
         <>
             <div className="foods">

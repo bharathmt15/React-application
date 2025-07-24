@@ -1,6 +1,12 @@
 import React from "react";
 import puri from "./Tiffins/Puri.jpg";
+import {useEffect} from "react";
 export default function Puri() {
+    useEffect(() => {
+        return () => {
+            document.title = "Press her's gently, and she moans out steam";
+        };
+    }, []);
     return (
         <>
             <div className="foods">

@@ -1,10 +1,17 @@
 import idly from "./Tiffins/Idly.jpg";
 import "./Style.css";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 export default function Home() {
+    const pricePerItem = 49;
     const [no, setNo] = useState(1);
-    const [Price] = useState("49/-");
+    const [totalPrice, setTotalPrice] = useState(pricePerItem);
+
+    useEffect(() => {
+        document.title = "Soft, white, and ready to make you cum for more";
+        setTotalPrice(no * pricePerItem);
+    }, [no]);
+
     return (
         <>
             <div className="foods">
@@ -25,22 +32,18 @@ export default function Home() {
                 <button className="btn btn-primary me-2">Order now</button>
                 <button
                     className="btn btn-danger ms-2"
-                    onClick={() => {
-                        setNo(no <= 1 ? 1 : no - 1);
-                    }}
+                    onClick={() => setNo(no <= 1 ? 1 : no - 1)}
                 >
                     -
                 </button>
                 <button className="btn btn-secondary ms-2">{no}</button>
                 <button
                     className="btn btn-success ms-2"
-                    onClick={() => {
-                        setNo(no + 1);
-                    }}
+                    onClick={() => setNo(no + 1)}
                 >
                     +
                 </button>
-                <p className="mt-2 price">Rs {Price}</p>
+                <p className="mt-2 price">Rs: {totalPrice}/-</p>
             </div>
         </>
     );
