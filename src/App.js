@@ -3,7 +3,7 @@
 // import Propdrilling from "./PropsDrilling/Propdrilling";
 
 // previously used components
-import Ecomstore from "./Components/Ecomstore";
+// import Ecomstore from "./Components/Ecomstore";
 // import Counter from "./Components/Counter";
 // import Todolist from "./Components/Todolist";
 // import Home from "./Components/Home.js";
@@ -20,6 +20,7 @@ import Ecomstore from "./Components/Ecomstore";
 // import Allfood from "./Components/Navbar/Allfood";
 // import ParentToChild from "./Components/ParentToChild";
 import "./App.css";
+import ChildToParent from "./Components/ChildToParent";
 
 function App() {
     return (
@@ -35,7 +36,7 @@ function App() {
         //         <Route path="/All_tiff" element={<Allfood />} />
         //     </Routes>
         // </Router>
-        <Ecomstore />
+        <ChildToParent />
     );
 }
 
