@@ -5,7 +5,7 @@ export default function More() {
     const [ChapathiPrice, setChapathiPrice] = useState(chapathiprice);
     const [ChapQ, setChapQ] = useState(1);
     useEffect(() => {
-        document.title = "Spread her P wide — she loves the heat";
+        document.title = "Spread her P wider — she loves the heat";
         setChapathiPrice(chapathiprice * ChapQ);
     }, [ChapQ]);
     return (
