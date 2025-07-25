@@ -1,12 +1,10 @@
-import React from "react";
 import {Link} from "react-router-dom";
-
 export default function Navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-dark mx-auto">
                 <Link className="navbar-brand text-white mx-4" to="/all_tiff">
-                    Hot_tiffins
+                    Hot-Tiffins
                 </Link>
                 <button
                     className="navbar-toggler"
