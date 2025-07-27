@@ -131,3 +131,16 @@ body {
     transform: scale(1.15);
     object-fit: cover;
 }
+#hotel {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#hotelimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
